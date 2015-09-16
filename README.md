@@ -185,6 +185,12 @@ Além disso, deve produzir figuras parecidas com:
 
 ### Conceitos aplicados
 
+* Abrir um arquivo para leitura: `arquivo = open('nome-arquivo.txt')`
+* Ler uma linha do arquivo como *string* (texto): `linha = arquivo.readline()`
+* Loop sobre as linhas de um arquivo: `for linha in arquivo:`
+* Métodos das variáveis tipo *string*: `linha.split(' ')` e `linha.strip()`
+* Conversão de *strings* para valores: `a = int("1")` e `b = float("4.2")`
+
 ### Instruções
 
 Ler a lista de um arquivo.
