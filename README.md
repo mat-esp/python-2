@@ -121,22 +121,51 @@ aula e seus comentários explicando cada linha de código.  Quando executado com
 
 ### Conceitos aplicados
 
+* Criação de figuras com a biblioteca [matplotlib](http://matplotlib.org/)
+* Carregar bibliotecas de funções: `import matplotlib.pyplot as plt`
+* Criar uma figura vazia: `plt.figure()`
+* Desenhar um gráfico de pontos ou linhas: `plt.plot(x, y, 'ok')` ou
+  `plt.plot(x, y, '-k')`
+* Colocar títulos no gráfico e eixos: `plt.title("Titulo")` e
+  `plt.xlabel("x eh tal coisa")`
+* Salvar a figura: `plt.savefig("nome-do-arquivo.png")`
+* Inserir valores em *strings* (texto):
+  `"Matematica {} - Turma {}".format("Especial", 1)` resulta em
+  `"Matematica Especial - Turma 1"`
+
 ### Instruções
 
-Faça um gráfico com o estado inicial da lista e um com o estado final.
-Salve os gráficos como `bubble-inicio.png` e `bubble-fim.png`.
-Salve todas as figuras em uma pasta `figs`.
-Outro aluno faça um gráfico para cada vez que houver uma troca.
-Salve os gráficos como `bubble-troca-1.png`, `bubble-troca-2.png` etc.
-**Note que os gráficos começam com 1.**
-Outro aluno faça um gráfico para cada iteração do algoritmo.
-Salve como `bubble-it-1.png`, `bubble-it-2.png`, etc.
-Nesses gráficos, o elemento `i` deve ser vermelho e o elemento `j` deve ser
-azul.
+Escolha um membro do grupo:
+
+* Crie uma pasta `fig` dentro da sua pasta do repositório
+* Modifique o seu programa para fazer um gráfico com a lista original. No eixo
+  x do gráfico, coloque o índice (posição na lista). No eixo y, coloque os
+  valores da lista. Faça o gráfico com bolas pretas. Coloque títulos
+  apropriados nos eixos.
+* A figura deve ser salva na pasta `fig` como `bubble-inicio.png`
+* Faça um gráfico da lista final (ordenada) com as mesmas características do
+  gráfico anterior.
+* Salve a figura na pasta `fig` como `bubble-fim.png`
+
+Troque o membro do grupo:
+
+* Modifique o programa para fazer um gráfico da lista como o descrito acima
+  cada vez que houver uma troca
+* Salve essas figuras como `bubble-troca-1.png`, `bubble-troca-2.png`, etc na
+  pasta `fig`
+* **Note que os gráficos começam com 1.**
+
+Troque o membro do grupo:
+
+* Modifique o programa para gerar um gráfico da lista a cada iteração do
+  algoritmo. Ou seja, para todos os valores de `i` e `j`, havendo troca ou não.
+* Nesses gráficos, o elemento `i` da vez deve ser uma bola vermelha e o
+  elemento `j` deve ser uma bola azul.
+* Salve as figuras como `bubble-it-1.png`, `bubble-it-2.png`, etc.
 
 ### Resultado esperado
 
-Quando executado, seu programa deve imprimir:
+Quando executado, seu programa deve imprimir algo parecido com:
 
     Lista original: [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
     Lista em ordem crescente: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
