@@ -92,7 +92,7 @@ Troque o membro do grupo:
 
 * Modifique o programa para que imprima ao final os 5 maiores e os 5
   menores valores em linhas separadas:
-  `Cinco maiores valores: [19, 18, 17, 16, 15]`
+  `Cinco maiores valores: [19, 18, 17, 16, 15]` e
   `Cinco menores valores: [0, 1, 2, 3, 4]`
 
 Dicas:
