@@ -5,6 +5,9 @@
 ## Preparação
 
 Faça um fork do repositório para sua conta no github.
+
+![](https://raw.githubusercontent.com/leouieda/mat-esp-python-intro/master/images/fork-button.jpg)
+
 Adicione os outros membros do grupo como colaboradores no projeto.
 Pegue um clone para cada membro e configure o git para cada clone.
 
