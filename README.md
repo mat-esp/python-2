@@ -124,17 +124,28 @@ aula e seus comentários explicando cada linha de código.  Quando executado com
 ### Instruções
 
 Faça um gráfico com o estado inicial da lista e um com o estado final.
-Salve os gráficos como `bubble-inicio.jpg` e `bubble-fim.jpg`.
+Salve os gráficos como `bubble-inicio.png` e `bubble-fim.png`.
 Salve todas as figuras em uma pasta `figs`.
 Outro aluno faça um gráfico para cada vez que houver uma troca.
-Salve os gráficos como `bubble-troca-1.jpg`, `bubble-troca-2.jpg` etc.
+Salve os gráficos como `bubble-troca-1.png`, `bubble-troca-2.png` etc.
 **Note que os gráficos começam com 1.**
 Outro aluno faça um gráfico para cada iteração do algoritmo.
-Salve como `bubble-it-1.jpg`, `bubble-it-2.jpg`, etc.
+Salve como `bubble-it-1.png`, `bubble-it-2.png`, etc.
 Nesses gráficos, o elemento `i` deve ser vermelho e o elemento `j` deve ser
 azul.
 
 ### Resultado esperado
+
+Quando executado, seu programa deve imprimir:
+
+    Lista original: [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
+    Lista em ordem crescente: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    Cinco maiores valores: [19, 18, 17, 16, 15]
+    Cinco menores valores: [0, 1, 2, 3, 4]
+
+Além disso, deve produzir figuras parecidas com:
+
+![Exemplo de figuras](https://raw.githubusercontent.com/leouieda/mat-esp-python-intro/master/images/exemplo-figuras.png)
 
 ## Tarefa 3
 
@@ -156,6 +167,7 @@ Depois de um arquivo números separados por espaços em múltiplas linhas.
 Depois de um arquivo CSV múltiplas linhas.
 
 ### Resultado esperado
+
 
 
 ## Finalizando
