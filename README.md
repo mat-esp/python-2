@@ -2,6 +2,12 @@
 
 ## Objetivos
 
+* Aprender os conceitos básicos de programação: variáveis, loops e condicionais
+* Usar esses conceitos aplicados a linguagem Python
+* Exercitar o uso do `git` para controle de versão
+* Expandir o conhecimento adquirido para conceitos mais avançados de Python:
+  leitura de arquivos e gráficos simples
+
 ## Preparação
 
 Faça um fork do repositório para sua conta no github.
