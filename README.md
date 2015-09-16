@@ -190,24 +190,71 @@ Além disso, deve produzir figuras parecidas com:
 * Loop sobre as linhas de um arquivo: `for linha in arquivo:`
 * Métodos das variáveis tipo *string*: `linha.split(' ')` e `linha.strip()`
 * Conversão de *strings* para valores: `a = int("1")` e `b = float("4.2")`
+* Fechar o arquivo depois de usá-lo: `arquivo.close()`
+* Adicionar valores em uma lista: `lista.append(valor)`
+* Abrir um arquivo para escrever: `arquivo = open('nome-arquivo.txt', 'w')`
+* Escrever uma *string* no arquivo: `arquivo.write(texto)`
 
 ### Instruções
 
-Ler a lista de um arquivo.
+Escolha um membro do grupo:
 
-**Dar arquivos para eles lerem**.
+* Crie uma cópia do programa como ele estava ao final da tarefa 1. Dica: use
+  `git checkout aqueles_numeros_malucos_do_commit` para voltar seu repositório
+  a um estado anterior. Não esqueça de voltar o repositório para estado atual
+  com `git checkout master`.
+* Renomeie sua cópia para `bubble-sort-from-file.py`.
+* Modifique a cópia para ler a lista que deve ser organizada do arquivo
+  `lista1.csv`. Copie esse arquivo para a sua pasta do repositório (não esqueça
+  de adicioná-lo).
+* O programa deve imprimir no começo: `Lendo lista do arquivo 'lista1.csv'...`
+* O programa deve ainda imprimir a lista original e a organizada como na tarefa
+  1
+* O programa **não** deve gerar os gráficos da tarefa 2
 
-Primeiro de arquivo `.txt` com um número por linha.
-Depois de um arquivo números separados por espaços em múltiplas linhas.
-Depois de um arquivo CSV múltiplas linhas.
+Troque o membro do grupo:
+
+* Modifique o programa (`bubble-sort-from-file.py`) para salvar a lista
+  organizada em um arquivo chamado `lista1-sort.csv`.
+* O programa **não** deve mais imprimir a lista original nem a lista
+  organizada.
+* O programa deve imprimir: `Salvando lista organizada no arquivo
+  'lista1-sort.csv'.`
+* Os valores no arquivo devem ser separados por `, ` e estar todos na mesma
+  linha
+
+Troque o membro do grupo:
+
+* Modifique o programa para ler a lista para organizar de 3 arquivos
+  diferentes: `lista1.csv`, `lista2.csv` e `lista3.csv`.
+* O programa deve imprimir as mensagens da etapa anterior para cada arquivo.
+* Utilize um loop `for` para não repetir todo o código 3 vezes.
+* As listas organizadas devem ser salvas em arquivos `lista1-sort.csv`,
+  `lista2-sort.csv` e `lista3-sort.csv`, como na etapa anterior.
+
 
 ### Resultado esperado
 
+Quando executado, o programa no estado final deve imprimir:
+
+    Lendo lista do arquivo 'lista1.csv'...
+    Salvando lista organizada no arquivo 'lista1-sort.csv'.
+    Lendo lista do arquivo 'lista2.csv'...
+    Salvando lista organizada no arquivo 'lista2-sort.csv'.
+    Lendo lista do arquivo 'lista3.csv'...
+    Salvando lista organizada no arquivo 'lista3-sort.csv'.
+
+Os arquivos de saída devem ser, por exemplo:
+
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ...
 
 
 ## Finalizando
 
-Faça um Pull Request.
+Faça um [Pull Request](https://help.github.com/articles/using-pull-requests/)
+do seu fork para o repositório original da prática.
+Indique os nomes completos do grupo e a qual turma pertencem no título do Pull
+Request.
 
 
 ## License
