@@ -1,5 +1,11 @@
 # Prática de introdução ao Python
 
+Parte do curso
+[Matemática Especial I](http://www.leouieda.com/matematica-especial/)
+da [UERJ](http://www.uerj.br/).
+
+Ministrado por [Leonardo Uieda](http://www.leouieda.com/).
+
 ## Objetivos
 
 * Aprender os conceitos básicos de programação: variáveis, loops e condicionais
