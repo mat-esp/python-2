@@ -4,6 +4,8 @@
 n = 20
 # elementos da lista
 lista = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
+# imprimir a lista em ordem original, denominada "Lista original"
+print ("Lista original:", lista)
 # intervalos dos valores para i
 for i in range(0, n-1, 1):
     # intervalos dos valores para j
@@ -16,5 +18,5 @@ for i in range(0, n-1, 1):
 	    lista [i] = lista [j]
             # mover o elemento do local temp para o local j 
 	    lista [j] = temp
-# mostrar o resultado
-print(lista)
+# imprimir a lista em ordem crescente, denominada "Lista em ordem crescente"
+print ("Lista em ordem crescente:" lista)
