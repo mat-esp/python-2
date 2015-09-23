@@ -19,4 +19,10 @@ for i in range(0, n-1, 1):
             # mover o elemento do local temp para o local j 
 	    lista [j] = temp
 # imprimir a lista em ordem crescente, denominada "Lista em ordem crescente"
-print ("Lista em ordem crescente:" lista)
+print ("Lista em ordem crescente:", lista)# 
+# conjunto de 5 numeros da lista
+lista [0 : 5] == [0, 1, 2, 3, 4]
+# imprimir lista dos cinco maiores valores em ordem decrescente
+print ("Cinco maiores valores:", lista [n : n - 5 : -1])
+# imprimir lista dos cinco menores valores em ordem crescente
+print ("Cinco menores valores:", lista [0 : n - 15])
