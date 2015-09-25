@@ -21,6 +21,7 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
 
 print(cartas) # mostra as cartas organizadas em ordem numerica, depois do teste. 
 
+
 print("Resultado do programa:", cartas) #mostra o resultado do programa, ou seja, organiza os numeros em ordem crescente
 
 #agora, vamos selecionar os 5 maiores e os 5 menores valores:
@@ -37,4 +38,3 @@ ultimos_elementos=cartas[N-6:N-1:1]
 #para imprimir: 
 print("5 primeiros elementos:", primeiros_elementos)
 print("5 ultimos elementos", ultimos_elementos)
-
