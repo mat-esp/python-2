@@ -38,3 +38,48 @@ ultimos_elementos=cartas[N-6:N-1:1]
 #para imprimir: 
 print("5 primeiros elementos:", primeiros_elementos)
 print("5 ultimos elementos", ultimos_elementos)
+
+
+
+
+
+#modificando o programa para iniciar a tarefa 2:
+
+#criando listas para eixo x e y:
+#eixo x (indice):
+
+indices=[0, 1, 2 , 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 16, 17, 18, 19]
+
+#eixo y(valores):
+lista = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8] 
+
+
+#para plotar graficos e figuras:
+
+#precisa-se importar a biblioteca matplotlib no python para termos ferramentas que tenham funcoes para criar e editar graficos.
+#como colocar titulos, alterar fonte, linhas, etc.
+
+import matplotlib.pyplot as plt
+
+#primeiro, precisamos criar uma figura (vazia)
+plt.figure()
+
+#para plotar os valores:
+plt.plot(indices,lista,'-ok') #o que esta escrito entre aspas, no final, e o que indica o tipo de linha e de pontos que queremos usar
+
+#para mostrar a figura
+plt.show()
+
+#para colocar titulo no grafico
+plt.title('Gráfico da lista com os indices - Camila e Tatiane')
+#para colocar titulo no iexo x:
+plt.xlabel('indices')
+#para o eixo y:
+plt.ylabel('valores da lista')
+
+#para salvar na pasta fig:
+
+plt.savefig("fig/bubble-inicio.png")
+
+
+
