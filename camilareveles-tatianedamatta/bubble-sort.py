@@ -66,6 +66,7 @@ plt.figure()
 
 #para plotar os valores:
 plt.plot(indices,lista,'-ok') #o que esta escrito entre aspas, no final, e o que indica o tipo de linha e de pontos que queremos usar
+# 'o' permite que crie bolinhas nos indices e 'k' seleciona a cor preta. ja o '-' indica que quero uma linha continua.
 
 #para mostrar a figura
 plt.show()
@@ -82,4 +83,28 @@ plt.ylabel('valores da lista')
 plt.savefig("fig/bubble-inicio.png")
 
 
+#na pratica 1, encontramos um modo de organizar essa lista em ordem crescente. (se encontra na linha 12 desse script)
+#essa lista organizada se chama cartas.
 
+#agora, vamos criar um grafico com a lista organizada e os indices
+
+#criando a figura:
+plt.figure()
+
+#valores (mesmo do anterior, mas trocamos 'lista' por 'cartas':
+plt.plot(indices,cartas,'-ok')
+
+
+#para colocar titulo no grafico
+plt.title('Gráfico da lista (organizada) com os indices - Camila e Tatiane')
+#para colocar titulo no iexo x:
+plt.xlabel('indices')
+#para o eixo y:
+plt.ylabel('valores')
+
+#mostrando a figura
+plt.show()
+
+#para salvar na pasta fig:
+
+plt.savefig("fig/bubble-fim.png")
