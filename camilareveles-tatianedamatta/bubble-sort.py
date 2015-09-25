@@ -77,7 +77,7 @@ plt.xlabel('indices')
 plt.ylabel('valores da lista')
 
 #para mostrar a figura
-plt.show()
+#plt.show()
 
 #para salvar na pasta fig:
 
@@ -104,7 +104,7 @@ plt.xlabel('indices')
 plt.ylabel('valores')
 
 #mostrando a figura
-plt.show()
+#plt.show()
 
 #para salvar na pasta fig:
 
