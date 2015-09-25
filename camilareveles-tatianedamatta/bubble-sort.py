@@ -20,3 +20,21 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
 # nova variavel chamada temp para todo i maior que j.
 
 print(cartas) # mostra as cartas organizadas em ordem numerica, depois do teste. 
+
+print("Resultado do programa:", cartas) #mostra o resultado do programa, ou seja, organiza os numeros em ordem crescente
+
+#agora, vamos selecionar os 5 maiores e os 5 menores valores:
+
+#5 primeiros elementos:
+primeiros_elementos=cartas[0:5:1]
+
+#5 ultimos elementos:
+#para selecionar os 5 ultimos: N e o numero de elementos; e 0 e o primeiro elemento. Entao, o ultimo sera N-1.
+#portanto, o decimo quinto elemento sera N-6.
+
+ultimos_elementos=cartas[N-6:N-1:1]
+
+#para imprimir: 
+print("5 primeiros elementos:", primeiros_elementos)
+print("5 ultimos elementos", ultimos_elementos)
+
