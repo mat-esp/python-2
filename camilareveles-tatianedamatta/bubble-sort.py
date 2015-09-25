@@ -82,7 +82,7 @@ plt.show()
 #para salvar na pasta fig:
 
 plt.savefig("fig/bubble-inicio.png")
-
+plt.close()
 
 #na pratica 1, encontramos um modo de organizar essa lista em ordem crescente. (se encontra na linha 12 desse script)
 #essa lista organizada se chama cartas.
@@ -109,3 +109,4 @@ plt.show()
 #para salvar na pasta fig:
 
 plt.savefig("fig/bubble-fim.png")
+plt.close()
