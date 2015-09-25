@@ -20,3 +20,6 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
 # nova variavel chamada temp para todo i maior que j.
 
 print(cartas) # mostra as cartas organizadas em ordem numerica, depois do teste. 
+
+print("Resultado do programa:", cartas)
+
