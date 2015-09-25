@@ -48,7 +48,7 @@ print("5 ultimos elementos", ultimos_elementos)
 #criando listas para eixo x e y:
 #eixo x (indice):
 
-indices=[0, 1, 2 , 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 16, 17, 18, 19]
+indices=[0, 1, 2 , 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
 
 #eixo y(valores):
 lista = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8] 
@@ -68,8 +68,6 @@ plt.figure()
 plt.plot(indices,lista,'-ok') #o que esta escrito entre aspas, no final, e o que indica o tipo de linha e de pontos que queremos usar
 # 'o' permite que crie bolinhas nos indices e 'k' seleciona a cor preta. ja o '-' indica que quero uma linha continua.
 
-#para mostrar a figura
-plt.show()
 
 #para colocar titulo no grafico
 plt.title('Gráfico da lista com os indices - Camila e Tatiane')
@@ -77,6 +75,9 @@ plt.title('Gráfico da lista com os indices - Camila e Tatiane')
 plt.xlabel('indices')
 #para o eixo y:
 plt.ylabel('valores da lista')
+
+#para mostrar a figura
+plt.show()
 
 #para salvar na pasta fig:
 
