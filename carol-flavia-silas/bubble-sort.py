@@ -20,7 +20,7 @@ plt.ylabel ("valor")
 plt.savefig("fig/grafico-inicial.png")
 plt.close()
 # nova tarefa gerar graficos com o nome bubble-troca.png iniciando em troca
-troca = 0             
+it = 0          
 # imprimir a lista em ordem original, denominada "Lista original"
 print ("Lista original:", lista)
 # intervalos dos valores para i
@@ -28,19 +28,22 @@ for i in range(0, n-1, 1):
     # intervalos dos valores para j
     for j in range(i+1, n, 1):
         # comparacao do elemento i com o elemento j, se o elemento i for maior que o j fazer:
-        if lista [i] > lista [j]:
+        if lista [i] <> lista [j]:
             # mover o elemento i para o local temp
             temp = lista [i]
             # mover o elemento do local j para o local i
             lista [i] = lista [j]
             # mover o elemento do local temp para o local j
             lista [j] = temp
+            it = it + 1
             # definir os graficos iniciando em bubble-troca-01
             troca = troca + 1
             # plotar os graficos            
             plt.figure()
             # plotar os graficos de 0 a n relativos a lista com bolas pretas            
             plt.plot(range(0, n), lista, 'ok')
+            plt.plot(i, lista [i], 'or')
+            plt.plot(j, lista [j], 'ob')
             # nomear o grafico com o titulo de 'principio'            
             plt.title("principio")
             # nomear o eixo x como 'indice'            
@@ -48,7 +51,7 @@ for i in range(0, n-1, 1):
             # nomear o eixo y como 'indice'            
             plt.ylabel ("valor")
             # salvar toda as figuras gerados como bubble-troca-n com n variando de 1 ate 99            
-            plt.savefig("fig/bubble-troca-{}.png".format(troca))
+            plt.savefig("fig/bubble-it-{}.png".format(it))
             plt.close()
 # imprimir a lista em ordem crescente, denominada "Lista em ordem crescente"
 print ("Lista em ordem crescente:", lista)
