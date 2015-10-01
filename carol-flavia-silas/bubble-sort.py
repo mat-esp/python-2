@@ -72,16 +72,23 @@ print ("Cinco maiores valores:", lista [n : n - 5 : -1])
 # imprimir lista dos cinco menores valores em ordem crescente
 print ("Cinco menores valores:", lista [0 : n - 15])
 
+# nova tarefa gerar graficos com o bubble-sort-it-n com todas as iteracoes de i e j com n variando de 0 ate n
 it = 0 
-
+# intervalos dos valores para i
 for i in range(0, n-1, 1):
     # intervalos dos valores para j
     for j in range(i+1, n, 1):
+        # comparacao dos valores para i menores que j       
         if lista [i] < lista [j]:
+            # se i menor que j move-se o elemento i para o local temp            
             temp = lista [i]
+            # se i menor que j move-se o elemento j para o local i            
             lista [i] = lista [j]
+            # move-se o elemento de temp para o local j            
             lista [j] = temp
+            # geracao dos graficos a partir de it definido o seu inicio            
             it = it + 1            
+            # plotar graficos            
             plt.figure()
             # plotar os graficos de 0 a n relativos a lista com bolas pretas            
             plt.plot(range(0, n), lista, 'ok')
