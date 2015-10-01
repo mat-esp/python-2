@@ -90,9 +90,11 @@ for i in range(0, n-1, 1):
             it = it + 1            
             # plotar graficos            
             plt.figure()
-            # plotar os graficos de 0 a n relativos a lista com bolas pretas            
+            # plotar os graficos de 0 a n ('i' e 'j') relativos a lista com bolas pretas            
             plt.plot(range(0, n), lista, 'ok')
+            # plotar no grafico os elementos i com bola vermelha            
             plt.plot(i, lista [i], 'or')
+            # plotar no grafico os elementos j com bola azul             
             plt.plot(j, lista [j], 'ob')        
             # nomear o grafico com o titulo de 'principio'            
             plt.title("principio")
