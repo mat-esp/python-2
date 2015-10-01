@@ -51,7 +51,7 @@ for i in range(0, n-1, 1):
             plt.xlabel("indice")
             # nomear o eixo y como 'indice'            
             plt.ylabel ("valor")
-            # salvar toda as figuras gerados como bubble-troca-n com n variando de 1 ate 99            
+            # salvar toda as figuras gerados como bubble-troca-n.png com n variando de 1 ate 99            
             plt.savefig("fig/bubble-troca-{}.png".format(troca))            
             plt.close()
 # imprimir a lista em ordem crescente, denominada "Lista em ordem crescente"
@@ -102,5 +102,6 @@ for i in range(0, n-1, 1):
             plt.xlabel("indice")
             # nomear o eixo y como 'indice'            
             plt.ylabel ("valor")            
+            # salvar os graficos criados na pasta fig com os arquivos bubble-it-n.png com n variando de 1 a 190            
             plt.savefig("fig/bubble-it-{}.png".format(it))
             plt.close()
