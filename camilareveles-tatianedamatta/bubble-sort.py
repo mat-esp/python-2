@@ -37,6 +37,18 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
             plt.close()
 
 
+
+
+
+
+n=0 
+t=0 #especificando a nova variavel que vai servir para gerar os nomes das figuras nas trocas
+for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
+    for j in range(i + 1, N, 1): # encontrando a posicao dos termos em j
+        if cartas[i] > cartas[j]: # realizando o teste
+            temp = cartas[i]
+            cartas[i] = cartas[j]
+            cartas[j] = temp
             #aqui comeca a alteracao para pratica da ultima parte da tarefa 2
             plt.figure()
 
