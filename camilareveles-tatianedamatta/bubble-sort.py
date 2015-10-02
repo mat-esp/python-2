@@ -38,9 +38,6 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
 
 
 
-
-
-
 # se cartas[i] for maior que cartas[j], ou seja, se o primeiro termo for maior que o segundo, sera montada uma 
 # nova variavel chamada temp para todo i maior que j.
 
@@ -136,4 +133,30 @@ plt.show()
 plt.savefig("fig/bubble-fim.png")
 plt.close()
 
-#modificando o programa para gerar um grafico da lista a cada interacao do algoritmo (sera feito a partir da linha 12, modificando o processo anterior)
+#modificando o programa para gerar um grafico da lista a cada troca (sera feito a partir da linha 12, modificando o processo anterior)
+
+
+#modificando o programa para realizar ultima parte de pratica 2: gerar grafico da lista a cada interacao do algoritmo:
+
+t=0 #especificando a nova variavel que vai servir para gerar os nomes das figuras nas trocas
+for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
+    for j in range(i + 1, N, 1): # encontrando a posicao dos termos em j
+        if cartas[i] > cartas[j]: # realizando o teste
+            temp = cartas[i]
+            cartas[i] = cartas[j]
+            cartas[j] = temp
+
+            #aqui comeca a alteracao para pratica da tarefa 2
+            plt.figure()
+
+            plt.plot(range(N),temp,'ok') #para plotar um grafico cada vez que ha uma troca
+            
+            plt.title('Gráfico da lista a cada interação do algoritmo')
+            plt.xlabel('indices')
+            plt.ylabel('valores')
+
+            t = t + 1 #usado para poder mudar o nome da figura no loop. por exemplo, fig1, fig2,fig 3 e assim sucessivamente. ou seja: t=1, depois, t=1+1=1 (fig2)
+
+            plt.savefig('bubble-it- {}.png' .format(t)) # {} e onde vao entrar os numeros t de nome da figura.
+
+            plt.close()
