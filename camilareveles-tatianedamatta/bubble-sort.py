@@ -16,6 +16,28 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
             cartas[i] = cartas[j]
             cartas[j] = temp
 
+            #aqui comeca a alteracao para pratica da tarefa 2
+            plt.figure()
+
+            plt.plot(range(N),cartas,'ok') #para plotar um grafico cada vez que ha uma troca
+            
+            plt.title('Gráfico da lista organizada')
+            plt.xlabel('indices')
+            plt.ylabel('valores')
+
+            n = n + 1 #usado para poder mudar o nome da figura no loop. por exemplo, fig1, fig2,fig 3 e assim sucessivamente. ou seja: n=1, depois, n=1+1=2 (fig2)
+
+            plt.savefig('bubble-troca {}.png' .format(n)) # {} e onde vao entrar os numeros n de nome da figura.
+
+            plt.close()
+
+
+
+
+
+
+
+
 # se cartas[i] for maior que cartas[j], ou seja, se o primeiro termo for maior que o segundo, sera montada uma 
 # nova variavel chamada temp para todo i maior que j.
 
@@ -110,3 +132,5 @@ plt.show()
 
 plt.savefig("fig/bubble-fim.png")
 plt.close()
+
+#modificando o programa para gerar um grafico da lista a cada interacao do algoritmo (sera feito a partir da linha 12, modificando o processo anterior)
