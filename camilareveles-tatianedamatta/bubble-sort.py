@@ -18,8 +18,10 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
     for j in range(i + 1, N, 1): # encontrando a posicao dos termos em j
         if cartas[i] > cartas[j]: # realizando o teste
             temp = cartas[i]
+            tentativa_i=cartas[i]
             cartas[i] = cartas[j]
             cartas[j] = temp
+            tentativa_j=cartas[j]
 
 
             #aqui comeca a alteracao para pratica da tarefa 2
@@ -39,9 +41,9 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
 
 
             plt.figure()
-            plt.plot(range(N),i,'ob') #para plotar um grafico cada vez que ha uma troca
+            plt.plot(tentativa_i,'ob') #para plotar um grafico cada vez que ha uma troca
             plt.hold
-            plt.plot(range(N),j,'or') #para plotar um grafico cada vez que ha uma troca
+            plt.plot(tentativa_j,'or') #para plotar um grafico cada vez que ha uma troca
 
 
             
