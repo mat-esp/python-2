@@ -65,7 +65,7 @@ import matplotlib.pyplot as plt
 plt.figure()
 
 #para plotar os valores:
-plt.plot(indices,lista,'-ok') #o que esta escrito entre aspas, no final, e o que indica o tipo de linha e de pontos que queremos usar
+plt.plot(indices,lista,'ok') #o que esta escrito entre aspas, no final, e o que indica o tipo de linha e de pontos que queremos usar
 # 'o' permite que crie bolinhas nos indices e 'k' seleciona a cor preta. ja o '-' indica que quero uma linha continua.
 
 
@@ -77,7 +77,7 @@ plt.xlabel('indices')
 plt.ylabel('valores da lista')
 
 #para mostrar a figura
-#plt.show()
+plt.show()
 
 #para salvar na pasta fig:
 
@@ -93,7 +93,7 @@ plt.close()
 plt.figure()
 
 #valores (mesmo do anterior, mas trocamos 'lista' por 'cartas':
-plt.plot(indices,cartas,'-ok')
+plt.plot(indices,cartas,'ok')
 
 
 #para colocar titulo no grafico
@@ -104,7 +104,7 @@ plt.xlabel('indices')
 plt.ylabel('valores')
 
 #mostrando a figura
-#plt.show()
+plt.show()
 
 #para salvar na pasta fig:
 
