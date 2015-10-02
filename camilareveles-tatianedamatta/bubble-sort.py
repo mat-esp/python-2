@@ -11,6 +11,7 @@ N = 20 # numero de termos
 
 import matplotlib.pyplot as plt
 
+n=0 #especificando a nova variavel que vai servir para gerar os nomes das figuras nas trocas
 for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
     for j in range(i + 1, N, 1): # encontrando a posicao dos termos em j
         if cartas[i] > cartas[j]: # realizando o teste
@@ -27,7 +28,7 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
             plt.xlabel('indices')
             plt.ylabel('valores')
 
-            n = n + 1 #usado para poder mudar o nome da figura no loop. por exemplo, fig1, fig2,fig 3 e assim sucessivamente. ou seja: n=1, depois, n=1+1=2 (fig2)
+            n = n + 1 #usado para poder mudar o nome da figura no loop. por exemplo, fig1, fig2,fig 3 e assim sucessivamente. ou seja: n=1, depois, n=1+1=1 (fig2)
 
             plt.savefig('bubble-troca {}.png' .format(n)) # {} e onde vao entrar os numeros n de nome da figura.
 
