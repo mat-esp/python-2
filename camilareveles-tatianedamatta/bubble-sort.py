@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 
 n=0 
 t=0 #especificando a nova variavel que vai servir para gerar os nomes das figuras nas trocas
+
 for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
     for j in range(i + 1, N, 1): # encontrando a posicao dos termos em j
         if cartas[i] > cartas[j]: # realizando o teste
@@ -34,35 +35,32 @@ for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
 
             plt.savefig('bubble-troca {}.png' .format(n)) # {} e onde vao entrar os numeros n de nome da figura.
 
-            plt.close()
+            #plt.close()
 
 
-
-
-
-
-n=0 
-t=0 #especificando a nova variavel que vai servir para gerar os nomes das figuras nas trocas
-for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
-    for j in range(i + 1, N, 1): # encontrando a posicao dos termos em j
-        if cartas[i] > cartas[j]: # realizando o teste
-            temp = cartas[i]
-            cartas[i] = cartas[j]
-            cartas[j] = temp
-            #aqui comeca a alteracao para pratica da ultima parte da tarefa 2
             plt.figure()
+            plt.plot(range(N),i,'ob') #para plotar um grafico cada vez que ha uma troca
+            plt.hold
+            plt.plot(range(N),j,'or') #para plotar um grafico cada vez que ha uma troca
 
-            plt.plot(range(N),cartas[i],'ob') #para plotar um grafico cada vez que ha uma troca
+
             
             plt.title('Gráfico da lista a cada interação do algoritmo')
             plt.xlabel('indices')
             plt.ylabel('valores')
 
+
             t = t + 1 #usado para poder mudar o nome da figura no loop. por exemplo, fig1, fig2,fig 3 e assim sucessivamente. ou seja: t=1, depois, t=1+1=1 (fig2)
 
             plt.savefig('bubble-it- {}.png' .format(t)) # {} e onde vao entrar os numeros t de nome da figura.
 
-            plt.close()
+            #plt.close()
+
+
+
+
+
+
 
 
             
