@@ -9,6 +9,8 @@ N = 20 # numero de termos
 # ja em j, iniciamos com i+1, pois o termo da primeira posicao ja foi indicado pelo primeiro "for i..."
 # cada "for" serve para testar se "cartas[i] e maior que cartas[j]; em seguida, comecamos o teste:
 
+import matplotlib.pyplot as plt
+
 for i in range(0, N - 1, 1): # encontrando a posicao dos termos na lista
     for j in range(i + 1, N, 1): # encontrando a posicao dos termos em j
         if cartas[i] > cartas[j]: # realizando o teste
